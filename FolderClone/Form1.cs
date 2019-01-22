@@ -16,8 +16,7 @@ namespace FolderClone
         private FolderBrowserDialog eFolderBrowserDialog;
         private string eSelectedFolderPath;
         private string eTargetFolderPath;
-        private List<string> folders;
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -57,26 +56,36 @@ namespace FolderClone
 
         private void button3_Click(object sender, EventArgs e)
         {
-            CreateDirectories(this.eSelectedFolderPath, this.eTargetFolderPath);
-            MessageBox.Show("Folders have been created.");
-            this.Dispose();
+            string folderName = Path.GetFileName(eSelectedFolderPath); 
+            if (! (Path.Combine(this.eTargetFolderPath,folderName)).Equals(this.eSelectedFolderPath))
+            {
+                CreateDirectories(this.eSelectedFolderPath, this.eTargetFolderPath);
+                MessageBox.Show("Folders have been created.");
+                this.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("The destination already contains a folder named" + folderName.ToString() + "\nPlease select a new destination");
+            }
+            
         }
 
         private void CreateDirectories(string folderPath, string targetPath)
         {
             string folderName = Path.GetFileName(folderPath);
             string newTargetFolder = Path.Combine(targetPath, folderName);
-            Directory.CreateDirectory(newTargetFolder);
 
             string[] subDirectoryFolders = Directory.GetDirectories(folderPath);
-            if (subDirectoryFolders.Length > 0) { 
+            if (subDirectoryFolders.Length > 0)
+            {
                 foreach (string folder in subDirectoryFolders)
                 {
                     CreateDirectories(folder, newTargetFolder);
                 }
             }
+            Directory.CreateDirectory(newTargetFolder);
         }
-
+       
         private void button4_Click(object sender, EventArgs e)
         {
             this.Dispose();
