@@ -1,0 +1,10 @@
+C:\Users\labuser\Desktop\Intern Files\FolderClone\FolderClone\bin\Debug\FolderClone.exe.config
+C:\Users\labuser\Desktop\Intern Files\FolderClone\FolderClone\bin\Debug\FolderClone.exe
+C:\Users\labuser\Desktop\Intern Files\FolderClone\FolderClone\bin\Debug\FolderClone.pdb
+C:\Users\labuser\Desktop\Intern Files\FolderClone\FolderClone\obj\Debug\FolderClone.csprojAssemblyReference.cache
+C:\Users\labuser\Desktop\Intern Files\FolderClone\FolderClone\obj\Debug\FolderClone.Form1.resources
+C:\Users\labuser\Desktop\Intern Files\FolderClone\FolderClone\obj\Debug\FolderClone.Properties.Resources.resources
+C:\Users\labuser\Desktop\Intern Files\FolderClone\FolderClone\obj\Debug\FolderClone.csproj.GenerateResource.cache
+C:\Users\labuser\Desktop\Intern Files\FolderClone\FolderClone\obj\Debug\FolderClone.csproj.CoreCompileInputs.cache
+C:\Users\labuser\Desktop\Intern Files\FolderClone\FolderClone\obj\Debug\FolderClone.exe
+C:\Users\labuser\Desktop\Intern Files\FolderClone\FolderClone\obj\Debug\FolderClone.pdb
