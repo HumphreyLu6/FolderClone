@@ -21,13 +21,8 @@ namespace FolderClone
         {
             InitializeComponent();
 
-            this.Width = 418;
-            this.Height = 440;
+            
             this.eFolderBrowserDialog = new FolderBrowserDialog();
-
-            button1.Width = button2.Width = 50;
-            button1.Height = button2.Height = 30;
-         
            
         }
 
