@@ -1,6 +1,6 @@
 # FolderClone
 
-Objective: Copy a folder with all its nested folders kept but all files deleted
+Objective: Copy a folder with all its nested folders kept but all content(except folder inside) will be deleted.
 
 ## Requirements
 
